@@ -23,19 +23,17 @@
 	<div class="item"></div>
 	<div class="item"></div>
 
-	<script type="text/javascript">
-jQuery(document).ready(function(){
+<script type="text/javascript">
+jQuery(document).ready(function() {
+	let colors = ['green', 'blue', 'red'];
+    let i = 0;
+    jQuery('.item').click(function() {
+        jQuery(this).css("backgroundColor", colors[i++]);
+        if (i >= colors.length)
+            i = 0;
 
-let colors = ['green', 'blue', 'red'];
-let i=0;
-	jQuery('.item').click(function () {
-jQuery(this).css("backgroundColor", colors[i++]);
-    if (i >= colors.length)
-        i = 0;		
-
+    });
 });
-});
-
 
 
 
